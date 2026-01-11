@@ -142,4 +142,4 @@ Sathusan
 
 Janice
 
-![Flowchart] (flowchart, 12_24_16.png)
+<img width="1024" height="1536" alt="flowchart, 12_24_16" src="https://github.com/user-attachments/assets/fe2bf11b-2293-4cd9-8cc2-f0f3b5e81b44" />
