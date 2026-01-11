@@ -1,5 +1,5 @@
 # HOLBERTON SCHOOL — simple_shell
-Description
+# Description
 
 hsh is a minimal UNIX command line interpreter written in C.
 This project is part of the Holberton School curriculum.
@@ -7,9 +7,9 @@ This project is part of the Holberton School curriculum.
 The shell reads user input, parses commands, searches executable paths,
 and executes programs using system calls.
 
-Compilation
+# Compilation
 gcc -Wall -Wextra -Werror -pedantic -std=gnu89 *.c -o hsh
-Usage
+# Usage
 ./hsh
 $ ls
 $ /bin/ls
@@ -22,14 +22,14 @@ Ctrl + D (EOF) exits the shell
 
 Ctrl + C prints a new prompt without exiting
 
-Core Behavior
-Input Reading
+# Core Behavior
+# Input Reading
 
 The shell uses getline() to read input from stdin
 
 One command is processed per line inside a loop
 
-Command Splitting
+# Command Splitting
 
 The input line is split into a char ** using strtow()
 
@@ -43,7 +43,7 @@ newline
 
 The : character is also handled internally to split PATH
 
-PATH Handling
+# PATH Handling
 
 get_path() retrieves the PATH environment variable
 
@@ -57,7 +57,7 @@ cmd[0] is replaced with the full executable path
 
 fork() is not called if the command does not exist
 
-Execution
+# Execution
 
 execve_cmd():
 
@@ -67,7 +67,7 @@ the child executes the command using execve()
 
 the parent waits using waitpid()
 
-Error Handling
+# Error Handling
 
 Error messages match /bin/sh format
 
@@ -85,8 +85,8 @@ Exit codes follow UNIX standards:
 
 2: invalid exit argument
 
-Built-in Commands
-exit
+# Built-in Commands
+# exit
 exit
 exit N
 
@@ -96,12 +96,12 @@ If N is provided, the exit status is N % 256
 
 Invalid numbers exit with status 2
 
-env
+# env
 env
 
 Prints the current environment
 
-Project Files
+# Project Files
 shell.c
 
 Main loop
@@ -136,7 +136,7 @@ Include guards
 
 extern char **environ
 
-Authors
+# Authors
 
 Sathusan
 
